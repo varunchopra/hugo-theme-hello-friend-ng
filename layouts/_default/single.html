@@ -5,14 +5,14 @@
             {{ if .IsTranslated }}
                 {{ i18n "postAvailable" }}
                 {{ range .Translations }}
-                    <a href="{{ .Permalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+                    <a href="{{ .RelPermalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
                 {{ end}}
             {{ end }}
             </p>
         </div>
 
         <article>
-            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+            <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
 
             {{ if .Params.Cover }}
                 <figure class="post-cover">

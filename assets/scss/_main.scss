@@ -1,7 +1,6 @@
 html {
   box-sizing: border-box;
-  line-height: 1.6;
-  letter-spacing: 0.06em;
+  line-height: 1.618;
   scroll-behavior: smooth;
 }
 
@@ -18,7 +17,7 @@ body {
     "Segoe UI", Helvetica, Arial, sans-serif;
   font-display: auto;
   font-size: 1rem;
-  line-height: 1.54;
+  line-height: 1.618;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
